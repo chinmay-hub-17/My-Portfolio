@@ -12,6 +12,7 @@ import CloseIcon from '@material-ui/icons/Close';
 
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
+import { blogData } from '../../data/blogData';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
 function Navbar() {
@@ -247,23 +248,25 @@ function Navbar() {
                             </NavLink>
                         </Fade>
 
-                        <Fade left>
-                            <NavLink
-                                to='/#blog'
-                                smooth={true}
-                                spy='true'
-                                duration={2000}
-                            >
-                                <div className={classes.drawerItem}>
-                                    <FaFolderOpen
-                                        className={classes.drawerIcon}
-                                    />
-                                    <span className={classes.drawerLinks}>
-                                        Blog
-                                    </span>
-                                </div>
-                            </NavLink>
-                        </Fade>
+                        {blogData.length > 0 && (
+                            <Fade left>
+                                <NavLink
+                                    to='/#blog'
+                                    smooth={true}
+                                    spy='true'
+                                    duration={2000}
+                                >
+                                    <div className={classes.drawerItem}>
+                                        <FaFolderOpen
+                                            className={classes.drawerIcon}
+                                        />
+                                        <span className={classes.drawerLinks}>
+                                            Blog
+                                        </span>
+                                    </div>
+                                </NavLink>
+                            </Fade>
+                        )}
 
                         <Fade left>
                             <NavLink

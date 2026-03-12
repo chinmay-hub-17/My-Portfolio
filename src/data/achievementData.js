@@ -1,43 +1,37 @@
 export const achievementData = {
-    bio : "Putting quantified achievements on a resume is great, but I just don’t work with hard numbers. I have no data to support the quality of my work. If you have lots of relevant experience, the heading statement of your resume will be a summary.",
-    achievements : [
+    bio: "Co-curricular highlights and certifications from internships, technical events, and industry exposure.",
+    achievements: [
         {
-            id : 1,
-            title : 'Google Cloud certification',
-            details : 'Google Cloud certifications validate your expertise and showcase your ability to transform businesses with Google Cloud technology.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1573141597928-403fcee0e056?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80'
+            id: 1,
+            title: 'BHEL Internship',
+            details: 'Completed a one-month internship at BHEL and received internship certification from the COE Power Electronics Lab.',
+            date: '2025',
+            field: 'Power Electronics',
+            image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=80'
         },
         {
-            id : 2,
-            title : 'AWS Certification',
-            details : 'Validate technical skills and cloud expertise to grow your career and business.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            id: 2,
+            title: 'Embedded Systems Internship',
+            details: 'Certified as an intern at Internz Learn with practical work in embedded systems and hardware interfacing.',
+            date: '2025',
+            field: 'Embedded Systems',
+            image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80'
         },
         {
-            id : 3,
-            title : 'Professional Data Engineer Certification',
-            details : 'Professional Data Engineers enable data-driven decision making by collecting, transforming, and publishing data.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            id: 3,
+            title: 'Texplore Project Expo Participation',
+            details: 'Participated in a national-level project expo and presented technical project work.',
+            date: '2025',
+            field: 'Project Expo',
+            image: 'https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80'
+        },
+        {
+            id: 4,
+            title: 'Python Crash Course (Udemy)',
+            details: 'Completed the Python crash course and strengthened practical programming fundamentals.',
+            date: '2025',
+            field: 'Programming',
+            image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80'
         }
-
     ]
 }
-
-
-// Do not remove any fields.
-// Leave it blank instead as shown below.
-
-/*
-
-export const achievementData = {
-    bio : "",
-    achievements : []
-}
-
-*/

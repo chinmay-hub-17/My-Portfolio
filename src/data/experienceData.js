@@ -1,23 +1,23 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'Globex Corporation',
-        jobtitle: 'Frontend Developer',
-        startYear: '2018',
-        endYear: '2019'
+        company: 'BHEL - Bharat Heavy Electricals Limited',
+        jobtitle: 'Intern (Power Electronics Lab)',
+        startYear: '2025',
+        endYear: '2025'
     },
     {
         id: 2,
-        company: 'Vehement Capital Partners',
-        jobtitle: 'Backend Developer',
-        startYear: '2019',
-        endYear: '2020'
+        company: 'Internz Learn',
+        jobtitle: 'Embedded Systems Intern',
+        startYear: '2025',
+        endYear: '2025'
     },
     {
         id: 3,
-        company: 'Wonka Industries',
-        jobtitle: 'Marketing',
-        startYear: '2020',
+        company: 'CMR Institute of Technology',
+        jobtitle: 'ECE Student Projects and Technical Club Contributor',
+        startYear: '2022',
         endYear: 'Present'
     },
 ]

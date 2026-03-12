@@ -134,22 +134,46 @@ function Contacts() {
 
         if (name && email && message) {
             if (isEmail(email)) {
+                const hasEmailJsConfig =
+                    contactsData.emailjsServiceId &&
+                    contactsData.emailjsTemplateId &&
+                    contactsData.emailjsPublicKey;
+
+                if (!hasEmailJsConfig) {
+                    setErrMsg(
+                        'Email service not configured. Add EmailJS IDs in contactsData.'
+                    );
+                    setOpen(true);
+                    return;
+                }
+
                 const responseData = {
-                    name: name,
-                    email: email,
-                    message: message,
+                    service_id: contactsData.emailjsServiceId,
+                    template_id: contactsData.emailjsTemplateId,
+                    user_id: contactsData.emailjsPublicKey,
+                    template_params: {
+                        from_name: name,
+                        from_email: email,
+                        message: message,
+                        to_email: contactsData.email,
+                    },
                 };
 
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
-                    console.log('success');
-                    setSuccess(true);
-                    setErrMsg('');
+                axios
+                    .post('https://api.emailjs.com/api/v1.0/email/send', responseData)
+                    .then(() => {
+                        setSuccess(true);
+                        setErrMsg('');
 
-                    setName('');
-                    setEmail('');
-                    setMessage('');
-                    setOpen(false);
-                });
+                        setName('');
+                        setEmail('');
+                        setMessage('');
+                        setOpen(false);
+                    })
+                    .catch(() => {
+                        setErrMsg('Failed to send message. Try again later.');
+                        setOpen(true);
+                    });
             } else {
                 setErrMsg('Invalid email');
                 setOpen(true);

@@ -1,9 +1,9 @@
 import resume from '../assets/pdf/resume.pdf'
 
 export const headerData = {
-    name: 'Jane Doe',
-    title: "Web Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    name: 'Chinmayananda Hiremath',
+    title: "Electronics and Communication Engineering Student",
+    desciption:"Motivated ECE student focused on embedded systems, motor control, and IoT automation. I build practical hardware-software solutions using ESP32, TI C2000 MCUs, Raspberry Pi, Arduino, and MATLAB/Simulink.",
+    image: '/profile.jpg',
     resumePdf: resume
 }

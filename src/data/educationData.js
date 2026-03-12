@@ -1,23 +1,23 @@
 export const educationData = [
     {
         id: 1,
-        institution: 'Marble Hills Middle School',
-        course: 'Higher Secondary Education',
-        startYear: '2007',
-        endYear: '2015'
+        institution: 'CMR Institute of Technology, Bengaluru',
+        course: 'Bachelor of Engineering - Electronics and Communication Engineering',
+        startYear: '2022',
+        endYear: '2026 (Pursuing)'
     },
     {
         id: 2,
-        institution: 'Somerset School of Science',
-        course: 'Bachelor of Technology',
-        startYear: '2015',
-        endYear: '2019'
+        institution: 'SMY Y Jana Tharani PU College, Vidyanagar, Gangavathi',
+        course: 'Pre-University Course - Science',
+        startYear: '2020',
+        endYear: '2022'
     },
     {
         id: 3,
-        institution: 'Hawking University, Cambridge',
-        course: 'Master of Technology',
+        institution: 'Rashtrotthana Vidya Kendra Ramanagara, Bellary',
+        course: '10th Standard',
         startYear: '2019',
-        endYear: 'Present'
+        endYear: '2020'
     },
 ]

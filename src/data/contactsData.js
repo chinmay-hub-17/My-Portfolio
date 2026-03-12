@@ -1,7 +1,14 @@
 export const contactsData = {
-    email: 'janedoe.test@gmail.com',
-    phone: '+915588776600',
-    address: 'Menlo Park, California, United States - 673822 ',
+    email: 'chinmayanandah@gmail.com',
+    phone: '+91 9731333524',
+    address: 'AECS Layout, Bengaluru, Karnataka, India',
+
+    // EmailJS config (https://www.emailjs.com/)
+    // Create a service + template, then paste IDs + public key below.
+    // Template params expected: from_name, from_email, message, to_email
+    emailjsServiceId: 'service_phl869f',
+    emailjsTemplateId: 'template_6vmtkgk',
+    emailjsPublicKey: 'P8uNFbVmouWZkkzwG',
 
     sheetAPI: ''
 }
